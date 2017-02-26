@@ -87,20 +87,20 @@
                         <div class="img-container">
 
                             <a href="#" class="img-link" targer="_blank">
-                                <figure class="img-portfolio"><img class="img-responsive" src="/assets/images/nayan3.jpg" />
-                                    <figcaption class="img-caption"><span class="caption-title">some text here</span></figcaption>
+                                <figure class="img-portfolio"><img class="img-responsive" src="images/under-construction.jpg" />
+                                    <figcaption class="img-caption"><span class="caption-title">project 1</span></figcaption>
                                 </figure>
                             </a>
 
                             <a href="#" class="img-link" targer="_blank">
-                                <figure class="img-portfolio"><img class="img-responsive" src="/assets/images/nayan4.jpg" />
-                                    <figcaption class="img-caption"><span class="caption-title">some text here</span></figcaption>
+                                <figure class="img-portfolio"><img class="img-responsive" src="images/under-construction.jpg" />
+                                    <figcaption class="img-caption"><span class="caption-title">project 2</span></figcaption>
                                 </figure>
                             </a>
 
                             <a href="#" class="img-link" targer="_blank">
-                                <figure class="img-portfolio"><img class="img-responsive" src="/assets/images/nayan3.jpg" />
-                                    <figcaption class="img-caption"><span class="caption-title">some text here</span></figcaption>
+                                <figure class="img-portfolio"><img class="img-responsive" src="images/under-construction.jpg" />
+                                    <figcaption class="img-caption"><span class="caption-title">project 3</span></figcaption>
                                 </figure>
                             </a>
 
