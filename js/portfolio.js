@@ -2,7 +2,7 @@
      $(function() {
          $(window).on('scroll', function() {
              if ($(this).scrollTop() > 100) {
-                 $('#scroll').fadeIn();
+                 $('#scroll').fadeIn(5000);
              } else {
                  $('#scroll').fadeOut();
              }
