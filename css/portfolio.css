@@ -330,18 +330,19 @@
          .scroll-top a {
              color: #fff;
              font-weight: bold;
-             line-height: 1.8em;
+             line-height: 1.3em;
              text-align: center;
-             background: #FFF;
+             font-size: 1.5em;
+             background: #500;
              width: 58px;
              height: 58px;
-             /*border: 2px solid #500;*/
+             border: 2px solid #FFF;
              border-radius: 100%;
              position: fixed;
              padding: 10px;
              right: 20px;
              bottom: 3em;
-             /*display: none;*/
+             display: none;
          }
          /*---------------------------------
             Mobile layout media queries
