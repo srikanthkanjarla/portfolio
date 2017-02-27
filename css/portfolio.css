@@ -41,6 +41,7 @@
          
          .icon-bar {
              background: #fff;
+             font-weight: bold;
          }
          
          #site-nav {
@@ -53,16 +54,15 @@
          #logo {
              width: 2.250em;
              height: 2.250em;
-             /* background-image:url('logo.png');*/
+             border: 2px solid #fff;
+             border-radius: 100%;
              background-color: #500;
              color: #fff;
              font-family: 'Dancing Script', cursive;
              font-weight: bolder;
              font-size: 2.2em;
              line-height: 1.43em;
-             text-indent: 0.329em;
-             border: 2px solid #fff;
-             border-radius: 50%;
+             text-align: center;
              margin: 0.5em;
              float: left;
          }
@@ -216,11 +216,6 @@
              top: 40%;
              height: 100%;
          }
-         /*   @media screen and (min-width:50em) {
-             a {
-                 width: calc(50%-6px);
-             }
-         }*/
          
          #portfolio h1,
          #contact h1 {
@@ -234,14 +229,13 @@
           -----------------------------------*/
          
          #contact {
-             padding: 8em 2em 0;
+             padding: 8em 1em 1em 1em;
              color: #500;
              text-align: left;
          }
          
          #contact p {
              font-size: 2em;
-             /*font-family: 'Lato', sans-serif;*/
              font-family: 'Tangerine', cursive;
              font-weight: bold;
              text-align: left;
@@ -321,8 +315,13 @@
          
          #footer li {
              list-style-type: none;
-             line-height: 2em;
-             display: inline;
+             display: inline-block;
+             height: 58px;
+             width: 58px;
+             border: 2px solid #fff;
+             border-radius: 100%;
+             line-height: 1.8em;
+             text-align: center;
          }
          /*------------------------------
             Scroll Top button
@@ -331,15 +330,17 @@
          .scroll-top a {
              color: #fff;
              font-weight: bold;
-             line-height: 2em;
-             background: #ff0088;
-             width: 50px;
-             height: 50px;
-             padding: 10px;
-             border-radius: 50%;
+             line-height: 1.8em;
+             text-align: center;
+             background: #FFF;
+             width: 58px;
+             height: 58px;
+             /*border: 2px solid #500;*/
+             border-radius: 100%;
              position: fixed;
-             right: 10px;
-             bottom: 10px;
+             padding: 10px;
+             right: 20px;
+             bottom: 3em;
              /*display: none;*/
          }
          /*---------------------------------
@@ -347,6 +348,85 @@
             --------------------------------*/
          
          @media only screen and (max-width: 480px) {
+             #logo {
+                 width: 1.8em;
+                 height: 1.8em;
+                 background-color: firebrick;
+                 font-size: 2em;
+                 line-height: .9em;
+                 text-indent: 0.15em;
+                 margin: 0.6em;
+             }
+             .navbar-default .navbar-toggle .icon-bar {
+                 background-color: #fff;
+             }
+             .navbar-default .navbar-toggle:focus,
+             .navbar-default .navbar-toggle:hover {
+                 background-color: transparent;
+             }
+             .navbar-toggle {
+                 margin-top: 35px;
+                 margin-right: 35px;
+             }
+             /*-----------------------------------
+                        profile section
+            -----------------------------------*/
+             #profile {
+                 padding: 6em 0 6.1em 0;
+                 color: #fff;
+             }
+             .profile-title {
+                 font-size: 4em;
+                 text-align: center;
+             }
+             .profile-description {
+                 font-size: 1.2em;
+                 text-align: left;
+                 margin: 4em 2em 2em 2em;
+             }
+             /* transparent overlay effect on profile section */
+             .profile-transparent-overlay {
+                 top: 6em;
+                 height: 491px;
+             }
+             /* end of profile section ruels */
+             /*-----------------------
+                 portfolio
+         -------------------------*/
+             #portfolio {
+                 padding: 6.5em 2em 1em;
+                 color: #fff;
+                 text-align: center;
+             }
+             /* portfolio image overlay */
+             .img-container {
+                 font-size: 0;
+                 display: flex;
+                 flex-wrap: wrap;
+                 justify-content: space-between;
+             }
+             .img-container img {
+                 width: 100%;
+                 height: 250px;
+                 margin-bottom: 1em;
+             }
+             .img-portfolio:hover .img {
+                 opacity: 1;
+             }
+             figure:hover .img-caption {
+                 opacity: 0;
+                 display: none;
+             }
+             .img-caption .caption-title {
+                 position: relative;
+                 font-family: 'Dancing Script', cursive;
+                 color: #fff;
+                 font-size: 2em;
+                 font-weight: bold;
+                 padding: .2em .3em;
+                 top: 40%;
+                 height: 100%;
+             }
              #contact-form {
                  padding-left: 0.3em;
                  width: 100%;
@@ -354,8 +434,5 @@
              .form-horizontal .form-group {
                  margin-right: 15px;
                  margin-left: 15px;
-             }
-             .img-container img {
-                 width: calc(100% - 25px);
              }
          }
