@@ -1,0 +1,32 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio site",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srikanthkanjarla/srikanthkanjarla.gihub.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "srikanth",
+    "kanjarla"
+  ],
+  "author": "srikanth kanjarla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srikanthkanjarla/srikanthkanjarla.gihub.io/issues"
+  },
+  "homepage": "https://github.com/srikanthkanjarla/srikanthkanjarla.gihub.io#readme",
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "prettier": "^1.14.3"
+  }
+}

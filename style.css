@@ -1,0 +1,13 @@
+:root {
+    --dark-green: #012622;
+    --rich-black: #003b36;
+    --lavender-mist: #ece5f0;
+    --carrot-orange: #e98a15;
+    --pancy-purple: #59114d;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: var(--lavender-mist);
+}
