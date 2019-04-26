@@ -2,179 +2,160 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>srikanth kanjarla - portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-        crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>srikanth kanjarla - portfolio</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+  <!-- main container -->
+  <div class="container" id="home">
+
+    <!-- header with logo and nav links -->
+    <header class="header" id="nav-bar">
+      <nav class="navbar">
+        <div class="logo">
+          <p class="logo-text">{ S }</p>
+        </div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio" id="portfolio-link">Portfolio</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
+          <li title="github profile"><a href="https://github.com/srikanthkanjarla" target="_blank"><i
+                class="fab fa-github"></i></a></li>
+        </ul>
+      </nav>
     </header>
-    <main class="content">
-        <section class="home-container" id="home">
-            <h1 class="fullname">I'm Srikanth kanjarla</h1>
-            <p class="intro-text">Frontend webdeveloper</p>
-        </section>
-        <section class="portfolio-outer" id="portfolio">
-            <h1 class="portfolio-title">Portfolio</h1>
-            <div class="portfolio-inner">
 
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/quote.png" alt="quotes-project-thumbnail">
-                    </div>
-                    <div class="card-content">
-                        <h2 class="card-title">Random Quote Machine</h2>
-                        <p class="card-text">A simple web app, which generates a random quote</p>
-                        <a href="https://github.com/srikanthkanjarla/Random-Quote-Machine/" class="btn btn-github-source"
-                            target="_blank"><i class="fab fa-github"></i>view source</a>
-                        <a href="https://srikanthkanjarla.github.io/Random-Quote-Machine/" class="btn btn-visit-site"
-                            target="_blank"><i class="fas fa-external-link-square-alt"></i>view live</a>
-                    </div>
-                </div>
+    <!-- Profile - homepage -->
+    <section class="profile-container">
+      <h1 class="profile-title">Hello, my name is <span class="profile-name" data-text="Srikanth Kanjarla">Srikanth
+          Kanjarla</span></h1>
+      <p class="profile-text">
+        I am a <span class="profile-role">Front End Developer</span> living in Hyderabad, India
+      </p>
+      <a href="#about-me" class="contact-link">
+        Know More &nbsp;&nbsp &rarr;
+      </a>
+      <div class="down-arrow"></div>
+    </section>
 
+    <!-- Portfolio - projects -->
+    <section class="portfolio-container" id="portfolio">
+      <h1 class="portfolio-title">My Recent Work</h1>
+      <p class="portfolio-text">
+        Take a look at some of my personal learning projects
+      </p>
+      <!-- project cards content is generated from javascript - projects.js -->
+      <div class="projects-container" id="projects"></div>
+    </section>
 
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/memory_game.png" alt="memory-game-project-thumbnail">
-                    </div>
-                    <div class="card-content">
-                        <h2 class="card-title">Fun Memory Game</h2>
-                        <p class="card-text">It is a memory game where user need to match pairs of tiles</p>
-                        <a href="https://github.com/srikanthkanjarla/memory-match-game/" class="btn btn-github-source"
-                            target="_blank"><i class="fab fa-github"></i>view source</a>
-                        <a href="https://srikanthkanjarla.github.io/memory-match-game/" class="btn btn-visit-site"
-                            target="_blank"><i class="fas fa-external-link-square-alt"></i>view live</a>
-                    </div>
-                </div>
+    <!-- About me -->
+    <section class="about-container" id="about-me">
+      <div class="aboutme-wrapper">
+        <h1 class="about-title">About Me</h1>
+        <div class="aboutme-content">
+          <p>My name is <span class="main-text">Srikanth Kanjarla</span> , based in
+            <span class="main-text">Hyderabad, India</span>. I have a bachelors in Information Technology</p>
+          <p>I'm learning through self-education and currently trying to becoming a <span class="main-text">Front End
+              Developer</span>, passionate
+            to learn new things.</p>
+          <p>I'm following the FreeCodeCamp curriculum, I have completed <strong>Responsive Web Design</strong>
+            challenges and working
+            on <strong>JavaScript Algorithms and Data Structures</strong>, <strong>Front End Libraries - React, Redux
+            </strong> challenges</p>
+          <!-- <p>I have completed 3 freeCodeCamp certificates
+          <ul>
+            <li>Responsive Web Design - HTML, CSS</li>
+            <li>JavaScript Algorithms and Data Structures</li>
+            <li>Front End Libraries - React, Redux, Sass</li>
+          </ul>
+        </p> -->
+          <p class="text-center">I am looking for a full time position as a Front-End Developer</p>
+          <p class="check-progress">You can view my code on <span class="main-text">GitHub</span> or my progress
+            with<span class="main-text">
+              FreeCodeCamp</span> here</p>
+          <ul class="icons">
+            <li class="github-icon" title="GitHub Profile"><a href="https://github.com/srikanthkanjarla"
+                target="_blank"><i class="fab fa-github"></i></a></li>
+            <li class="fcc-icon" title="FreeCodeCamp Profile"><a href="https://www.freecodecamp.org/srikanthkanjarla"
+                target="_blank"><i class="fab fa-free-code-camp"></i></a></li>
+            <li class="codepen-icon" title="Codepen Profile"><a href="https://codepen.io/srikanth-kanjarla/"
+                target="_blank"><i class="fab fa-codepen"></i></a></li>
+          </ul>
+        </div>
+      </div>
 
+      <!-- Skills  -->
+      <div class="skills-wrapper">
+        <h1 class="skills-title">My Skills</h1>
+        <div class="skills-container">
+          <ul class="skills icons">
+            <li class="html5-icon"><i class="fab fa-html5"></i> Html5</li>
+            <li class="css3-icon"><i class="fab fa-css3-alt"></i> Css3</li>
+            <li class="bootstrap-icon"><i class="fab fa-bootstrap"></i> Bootstrap</li>
+            <li class="js-icon"><i class="fab fa-js-square"></i> JavaScript</li>
+            <li class="react-icon"><i class="fab fa-react"></i> ReactJS</li>
+            <li class="redux-icon"><img src="./images/redux-icon.svg" alt="redux-icon"> Redux</li>
+            <!-- <li class="graphql-icon"><img src="./images/graphql-icon.svg" alt="graphql-icon">GraphQL</li>
+            <li class="gatsby-icon"><img src="./images/gatsby-icon.svg" alt="gatsby-icon">GatsBy</li> -->
+            <li class="npm-icon"><i class="fas fa-code-branch"></i> git</li>
+            <li class="npm-icon"><i class="fab fa-github-square"></i> GitHub</li>
+            <li class="npm-icon"><i class="fab fa-npm"></i> npm</li>
+            <li class="webpack-icon"><img src="./images/webpack-icon.svg" alt="webpack-icon"> Webpack</li>
+            <li class="babel-icon"><img src="./images/babel-icon.svg" alt="babel-icon"> Babel</li>
+            <li class="eslint-icon"><img src="./images/eslint-icon.svg" alt="eslint-icon"> Eslint</li>
+          </ul>
+        </div>
+      </div>
 
-                <div class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/reserve/QTrNn7DETWGsjyS5L2n5__MG_8345.jpg?ixlib=rb-0.3.5&s=f2281176f5c2f02606f04d9c4349b208&auto=format&fit=crop&w=300&h=300&q=80"
-                            alt="project-thumbnail">
-                    </div>
-                    <div class="card-content">
-                        <h2 class="card-title">Weather App</h2>
-                        <p class="card-text">App to Get the latest local weather information</p>
-                        <a href="https://github.com/srikanthkanjarla/Local-Weather-App/" class="btn btn-github-source"
-                            target="_blank"><i class="fab fa-github"></i>view source</a>
-                        <a href="https://srikanthkanjarla.github.io/Local-Weather-App/" class="btn btn-visit-site"
-                            target="_blank"><i class="fas fa-external-link-square-alt"></i>view live</a>
-                    </div>
-                </div>
+    </section>
 
+    <!-- Contact me -->
+    <section class="contact-container" id="contact-me">
+      <h1 class="contact-title">Contact Me</h1>
+      <p class="contact-text">Want to know more? Drop me a line</p>
+      <p class="email"><i class="fas fa-envelope"></i> Email - srikanthkanjarla@gmail.com</p>
+      <!-- <p class="discord"><i class="fab fa-discord"></i> Discord - srikanthkanjarla#6766 </p> -->
+      <ul class="contact-icons icons">
+        <li class="twitter-icon" title="Twitter"><a href="https://twitter.com/Srikanth__K" target="_blank"><i
+              class="fab fa-twitter"></i></a></li>
+        <li class="facebook-icon" title="Facebook"><a href="https://www.facebook.com/srikanthrao.kanjarla"
+            target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <!-- <li class="linkedin-icon" title="LinkedIn"><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </li> -->
+      </ul>
+    </section>
 
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/stop_watch.png" alt="stopwatch-project-thumbnail">
-                    </div>
-                    <div class="card-content">
-                        <h2 class="card-title">Stop Watch</h2>
-                        <p class="card-text">Simple stopwatch using JavaScript</p>
-                        <a href="https://github.com/srikanthkanjarla/stop-watch/" class="btn btn-github-source" target="_blank"><i
-                                class="fab fa-github"></i>view source</a>
-                        <a href="https://srikanthkanjarla.github.io/stop-watch/" class="btn btn-visit-site" target="_blank"><i
-                                class="fas fa-external-link-square-alt"></i>view live</a>
-                    </div>
-                </div>
-
-
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/doc_page.png" alt="technical-documentation-project-thumbnail">
-                    </div>
-                    <div class="card-content">
-                        <h2 class="card-title">Documentation Page</h2>
-                        <p class="card-text">Technical Documentation page on Javscript Basics</p>
-                        <a href="https://github.com/srikanthkanjarla/technical-documentation-page/" class="btn btn-github-source"
-                            target="_blank"><i class="fab fa-github"></i>view source</a>
-                        <a href="https://srikanthkanjarla.github.io/technical-documentation-page/" class="btn btn-visit-site"
-                            target="_blank"><i class="fas fa-external-link-square-alt"></i>view live</a>
-                    </div>
-                </div>
-
-
-                <div class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1540053561102-d78bf01f5599?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=aeab90b1bd215aafcc92ed74088cda1c&auto=format&fit=crop&w=300&h=300&q=80"
-                            alt="project-thumbnail">
-                    </div>
-                    <div class="card-content">
-                        <h2 class="card-title">Landing Page</h2>
-                        <p class="card-text">Landing page </p>
-                        <a href="https://github.com/srikanthkanjarla/Product-Landing-Page/" class="btn btn-github-source"
-                            target="_blank"><i class="fab fa-github"></i>view source</a>
-                        <a href="https://srikanthkanjarla.github.io/Product-Landing-Page/" class="btn btn-visit-site"
-                            target="_blank"><i class="fas fa-external-link-square-alt"></i>view live</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/reserve/QTrNn7DETWGsjyS5L2n5__MG_8345.jpg?ixlib=rb-0.3.5&s=f2281176f5c2f02606f04d9c4349b208&auto=format&fit=crop&w=300&h=300&q=80"
-                            alt="project-thumbnail">
-                    </div>
-                    <div class="card-content">
-                        <h2 class="card-title">Survey Form</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-                        <a href="https://github.com/srikanthkanjarla/survey-form/" class="btn btn-github-source" target="_blank"><i
-                                class="fab fa-github"></i>view source</a>
-                        <a href="https://srikanthkanjarla.github.io/survey-form/" class="btn btn-visit-site" target="_blank"><i
-                                class="fas fa-external-link-square-alt"></i>view live</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="images/tribute_kalam.png" alt="project-thumbnail">
-                    </div>
-                    <div class="card-content">
-                        <h2 class="card-title">Tribute Page</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-                        <a href="https://github.com/srikanthkanjarla/Tribute_Page/" class="btn btn-github-source"
-                            target="_blank"><i class="fab fa-github"></i>view source</a>
-                        <a href="https://srikanthkanjarla.github.io/Tribute_Page/" class="btn btn-visit-site" target="_blank"><i
-                                class="fas fa-external-link-square-alt"></i>view live</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/reserve/QTrNn7DETWGsjyS5L2n5__MG_8345.jpg?ixlib=rb-0.3.5&s=f2281176f5c2f02606f04d9c4349b208&auto=format&fit=crop&w=300&h=300&q=80"
-                            alt="project-thumbnail">
-                    </div>
-                    <div class="card-content">
-                        <h2 class="card-title">Project Title</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-                        <a href="https://github.com/srikanthkanjarla/Random-Quote-Machine/" class="btn btn-github-source"
-                            target="_blank"><i class="fab fa-github"></i>view source</a>
-                        <a href="https://srikanthkanjarla.github.io/Random-Quote-Machine/" class="btn btn-visit-site"
-                            target="_blank"><i class="fas fa-external-link-square-alt"></i>view live</a>
-                    </div>
-                </div>
-            </div>
-
-
-        </section>
-        <section class="about-container" id="about">
-            <p>
-            </p>
-        </section>
-        <section class="contact-container" id="contact"></section>
-    </main>
+    <!-- Footer -->
     <footer class="footer">
-
+      <ul class="icons">
+        <li class="github-icon" title="GitHub"><a href="https://github.com/srikanthkanjarla" target="_blank"><i
+              class="fab fa-github"></i></a></li>
+        <li class="fcc-icon" title="FreeCodeCamp"><a href="https://www.freecodecamp.org/srikanthkanjarla"
+            target="_blank"><i class="fab fa-free-code-camp"></i></a></li>
+        <li class="codepen-icon" title="Codepen"><a href="https://codepen.io/srikanth-kanjarla/" target="_blank"><i
+              class="fab fa-codepen"></i></a></li>
+        <li class="twitter-icon" title="Twitter"><a href="https://twitter.com/Srikanth__K" target="_blank"><i
+              class="fab fa-twitter"></i></a></li>
+        <li class="facebook-icon" title="Facebook"><a href="https://www.facebook.com/srikanthrao.kanjarla"
+            target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <!-- <li class="linkedin-icon" title="LinkedIn"><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </li> -->
+      </ul>
+      <p>Made with <i class="fas fa-heart"></i> by Srikanth Kanjarla</p>
+      <p>Copyright &copy <span id="year"></span>. All Rights Reserved</p>
     </footer>
+  </div>
+  <script src="projects.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
