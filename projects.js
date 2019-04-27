@@ -106,3 +106,6 @@ projects.map(project => {
   projectsContainer.innerHTML += html;
   return projectsContainer;
 });
+
+//Eliot's Comment: I noticed the spacing between the tech labels like this "HTML , CSS", so 
+//I'm curious how you might change that to be like this "HTML, CSS". Good job!
